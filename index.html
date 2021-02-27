@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Invertebrate Paleontology
+title: Invertebrate Paleontology with a touch of Zoology
 ---
 
  <div class="container">
@@ -18,7 +18,7 @@ title: Invertebrate Paleontology
             </div>
     <div class="six columns"></div>   
     
-    <p><img src="Me.jpg" alt="Woman with a hat standing on a mountain" width: 20% height: 20%/><p/>
+    <p><img src="Me.jpg" alt="Woman with a hat standing on a mountain" width: 10% height: 10%/><p/>
    </div>
   </div>
        
@@ -30,7 +30,7 @@ title: Invertebrate Paleontology
     <div class="container">
   <div class="row">
  <div class="six columns"> 
- <h1 class="content-listing-header sans">Papers</h1>
+ <h1 class="content-listing-header sans">Research</h1>
          <hr class="slender">
 
   <ul class="content">
@@ -43,10 +43,10 @@ title: Invertebrate Paleontology
 
 
 <div class="six columns"> 
- <h1 class="content-listing-header sans">Notebook</h1>
+ <h1 class="content-listing-header sans">Outreach</h1>
   <ul class="content">
     {% for post in site.posts %}
-    {% if post.tags contains 'notebook' %}
+    {% if post.tags contains 'outreach' %}
         <hr class="slender">
         <a href="{{ post.url }}"><h6 class="contrast">{{ post.title }}</h6></a>
         <span class="smaller">{{ post.date | date: "%B %-d, %Y" }}</span>  <br/>
@@ -60,43 +60,7 @@ title: Invertebrate Paleontology
 <hr class="slender">
 
 
-  <div class="row">
-<div class="twelve columns">
-    <img src="/assets/img/bryo-mast.jpg" width="100%">
-</div></div>
-
-
 <hr class="slender">
 
-
-
-
-<div class="container">
-  <div class="row">
-    <div class="four columns"> 
-    <h6>Macroevolution</h6>
-        <a href="/sorted-posts/specieselection"><small>Species Selection</small></a><br>
-       <a href="/sorted-posts/trends"> <small>Trends</small></a><br>
-        <a href="/sorted-posts/heritability"><small>Heritability</small></a><br>
-        <a href="/sorted-posts/polymorphism"><small>Polymorphism</small></a><br>
-    </div>
-
-    <div class="four columns"> 
-    <h6>Organisms</h6>
-      <a href="/sorted-posts/bryozoan"><small>Bryozoans</small></a><br>
-      <a href="/sorted-posts/corals"><small>Corals</small></a><br>
-      <a href="/sorted-posts/colonies"><small>Colonies</small></a><br>
-     <a href="/sorted-posts/stylopoma"><small><em>Stylopoma</em></small></a><br>
-    </div>
-
-    <div class="four columns"> 
-    <h6>Methods</h6>
-      <a href="/sorted-posts/priceeq"><small>Price equation</small></a><br>
-      <a href="/sorted-posts/molphylo"><small>Molecular Phylogenetics</small></a><br>
-      <a href="/sorted-posts/paleobiodb"><small>PaleobioDB</small></a> <br>
-      <a href="/sorted-posts/R"><small>R</small></a><br>
-    </div>
-  </div>
-</div>
 
 <hr class="slender">
