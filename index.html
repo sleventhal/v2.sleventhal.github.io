@@ -44,5 +44,80 @@
   <p class="p1"><span class="s1">Hi! I am Sarah Leventhal, an invertebrate paleontologist interested in the evolution of colonial animals. <br>
     Much of my research focuses on modular colonies - bryozoans specifically. </p>
     <br/>
+    
+    <div class="container">
+  <div class="row">
+ <div class="six columns"> 
+ <h1 class="content-listing-header sans">Papers</h1>
+         <hr class="slender">
+
+  <ul class="content">
+    {% for post in site.posts %}
+      {% if post.tags contains 'paper' %}
+      	<a href="{{ post.url }}"><h6 class="contrast">{{ post.title }}</h6></a>
+		  {% endif %}
+    {% endfor %}
+  </ul></div>
+
+
+<div class="six columns"> 
+ <h1 class="content-listing-header sans">Notebook</h1>
+  <ul class="content">
+    {% for post in site.posts %}
+    {% if post.tags contains 'notebook' %}
+        <hr class="slender">
+        <a href="{{ post.url }}"><h6 class="contrast">{{ post.title }}</h6></a>
+        <span class="smaller">{{ post.date | date: "%B %-d, %Y" }}</span>  <br/>
+   {{ post.content | strip_html | truncatewords: 20 }}
+          {% endif %}
+
+    {% endfor %}
+  </ul></div>
+  </div></div>
+
+<hr class="slender">
+
+
+  <div class="row">
+<div class="twelve columns">
+    <img src="/assets/img/bryo-mast.jpg" width="100%">
+</div></div>
+
+
+<hr class="slender">
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="four columns"> 
+    <h6>Macroevolution</h6>
+        <a href="/sorted-posts/specieselection"><small>Species Selection</small></a><br>
+       <a href="/sorted-posts/trends"> <small>Trends</small></a><br>
+        <a href="/sorted-posts/heritability"><small>Heritability</small></a><br>
+        <a href="/sorted-posts/polymorphism"><small>Polymorphism</small></a><br>
+    </div>
+
+    <div class="four columns"> 
+    <h6>Organisms</h6>
+      <a href="/sorted-posts/bryozoan"><small>Bryozoans</small></a><br>
+      <a href="/sorted-posts/corals"><small>Corals</small></a><br>
+      <a href="/sorted-posts/colonies"><small>Colonies</small></a><br>
+     <a href="/sorted-posts/stylopoma"><small><em>Stylopoma</em></small></a><br>
+    </div>
+
+    <div class="four columns"> 
+    <h6>Methods</h6>
+      <a href="/sorted-posts/priceeq"><small>Price equation</small></a><br>
+      <a href="/sorted-posts/molphylo"><small>Molecular Phylogenetics</small></a><br>
+      <a href="/sorted-posts/paleobiodb"><small>PaleobioDB</small></a> <br>
+      <a href="/sorted-posts/R"><small>R</small></a><br>
+    </div>
+  </div>
+</div>
+
+<hr class="slender">
+
   </body>
 </html>
