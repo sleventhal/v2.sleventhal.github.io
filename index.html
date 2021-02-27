@@ -33,27 +33,17 @@ title: Sarah Leventhal - Invertebrate Paleontology with a touch of Zoology
  <h1 class="content-listing-header sans">Research</h1>
          <hr class="slender">
 	 <p class="p1"><span class="s1"> </p>
-
-  <ul class="content">
-    {% for post in site.posts %}
-      {% if post.tags contains 'research' %}
-      	<a href="https://www.youtube.com/watch?v=Zf6xeURkY4c&t=24s&ab_channel=ASNAmNat" target="_blank"> <small> Trait Heredity and Morphological Distance between Species</small></a>
-		  {% endif %}
-    {% endfor %}
-  </ul></div>
+<iframe width="420" height="315"
+src="https://www.youtube.com/watch?v=Zf6xeURkY4c&ab_channel=ASNAmNat">
+</iframe>
+	  </div>
 
 
 <div class="six columns"> 
  <h1 class="content-listing-header sans">Outreach</h1>
-  <ul class="content">
-    {% for post in site.posts %}
-    {% if post.tags contains 'outreach' %}
-        <hr class="slender">
-        <a href="https://www.colorado.edu/cumuseum/2021/01/13/bryozoan" target ="_blank"> <small> CU Museum of Naturral History Wonder of the Week Blog </small></a>
-        <span class="smaller">{{ post.date | date: "%B %-d, %Y" }}</span>  <br/>
-   {{ post.content | strip_html | truncatewords: 20 }}
-          {% endif %}
 
-    {% endfor %}
-  </ul></div>
+        <hr class="slender">
+	<a href="https://www.colorado.edu/cumuseum/2021/01/13/bryozoan">CU Museum of Naturral History Wonder of the Week Blog</a>
+
+	  </div>
   </div></div>
